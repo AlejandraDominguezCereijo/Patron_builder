@@ -7,14 +7,16 @@ public class Main {
                 .setCebolla(true)
                 .setSize(Pizzas.BIG)
                 .build();
-
+        Pizzas vegetariana=new Pizzas(0,3,false,false,true,0);
+        Pizzas romana=new Pizzas(1,2,true,false,false,1);
         // aunque el toSpring no está definida, nos valen estas lineas para poner
         // un punto de ruptura y hacer debug
         // asi podemos ver los objetos creados
         System.out.println(creadaConBuilder.toString());
         System.out.println(sintaxisEncadenada.toString());
-        //El toString lo puse a mi gusto para que en vez de salir los numeros asociados a size o tipo de masa salieran los literales
-        //que tenemos declarados al inicio de la clase pizzas
+        System.out.println(vegetariana);
+        System.out.println(romana);
+
 
     }
 }

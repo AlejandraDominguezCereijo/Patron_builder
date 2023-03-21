@@ -27,7 +27,7 @@ public class Pizzas {
             this.size = MEDIUM;
             this.tipoMasa = FINA;
         }
-
+        
         /**
          * Constructor con todoa los parametros
          * @param tipoMasa espesor de la masa
@@ -97,12 +97,12 @@ public class Pizzas {
     @Override
     public String toString() {
         return "Pizzas{" +
-                "tipoMasa=" + FINA +
-                ", size=" + MEDIUM +
+                "tipoMasa=" + tipoMasa +
+                ", size=" + size +
                 ", rellena=" + rellena +
                 ", cebolla=" + cebolla +
                 ", sinGluten=" + sinGluten +
-                ", recojida=" + TIENDA +
+                ", recojida=" + recojida +
                 '}';
     }
 }
