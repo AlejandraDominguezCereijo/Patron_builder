@@ -1,16 +1,16 @@
 public class BuilderPizzas {
     // este es el objeto que va a construir nuestro Builder
     // utilizamos el guion bajo para remarcar que es un objeto de esta clase
-    protected Pizzas _pizza;
+    protected Pizzas_2023 _pizza;
 
     // metodo que devuelve el objeto terminado
-    public Pizzas build() {
+    public Pizzas_2023 build() {
         return this._pizza;
     }
 
     // crea la pizza para configurarla
     public BuilderPizzas() {
-        _pizza = new Pizzas();
+        _pizza = new Pizzas_2023();
     }
 
     // metodos para la personalizacion de la pizza

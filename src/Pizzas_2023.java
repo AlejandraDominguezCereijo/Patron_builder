@@ -1,4 +1,4 @@
-public class Pizzas {
+public class Pizzas_2023 {
         private int tipoMasa;
         private int size;
         private boolean rellena;
@@ -6,6 +6,8 @@ public class Pizzas {
         private boolean sinGluten;
         private int recojida;
 
+        private boolean champiñones;
+        private boolean aceitunas;
         // tipo de masa
         public static final int FINA = 0;
         public static final int PAN = 1;
@@ -19,13 +21,15 @@ public class Pizzas {
         public static final int TIENDA = 0;
         public static final int PARALLEVAR = 1;
 
-        public Pizzas(){
-            this.cebolla = true;
-            this.recojida = TIENDA;
+        public Pizzas_2023(){
+            this.cebolla = false;
+            this.recojida = PARALLEVAR;
             this.rellena = false;
             this.sinGluten = false;
             this.size = MEDIUM;
             this.tipoMasa = FINA;
+            this.aceitunas=true;
+            this.champiñones=true;
         }
 
         /**
@@ -37,13 +41,15 @@ public class Pizzas {
          * @param sinGluten para celíacos
          * @param recojida como lo va a recoger el cliente
          */
-        public Pizzas(int tipoMasa, int size, boolean rellena, boolean cebolla, boolean sinGluten, int recojida) {
+        public Pizzas_2023(int tipoMasa, int size, boolean rellena, boolean cebolla, boolean sinGluten, int recojida, boolean aceitunas,boolean champiñones) {
             this.tipoMasa = tipoMasa;
             this.size = size;
             this.rellena = rellena;
             this.cebolla = cebolla;
             this.sinGluten = sinGluten;
             this.recojida = recojida;
+            this.aceitunas=aceitunas;
+            this.champiñones=champiñones;
         }
 
         public int getTipoMasa() {
@@ -96,13 +102,15 @@ public class Pizzas {
 
     @Override
     public String toString() {
-        return "Pizzas{" +
-                "tipoMasa=" + FINA +
-                ", size=" + MEDIUM +
+        return "Pizzas_2023{" +
+                "tipoMasa=" + tipoMasa +
+                ", size=" + size +
                 ", rellena=" + rellena +
                 ", cebolla=" + cebolla +
                 ", sinGluten=" + sinGluten +
-                ", recojida=" + TIENDA +
+                ", recojida=" + recojida +
+                ", champiñones=" + champiñones +
+                ", aceitunas=" + aceitunas +
                 '}';
     }
 }

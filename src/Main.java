@@ -2,19 +2,12 @@ public class Main {
     public static void main(String[] args) {
         // utilizamos el builder y en concreto el metodo build
         // para tener nuestra pizza
-        Pizzas creadaConBuilder = new BuilderPizzas().build();
-        Pizzas sintaxisEncadenada = new BuilderPizzas()
-                .setCebolla(true)
-                .setSize(Pizzas.BIG)
-                .build();
-
-        // aunque el toSpring no está definida, nos valen estas lineas para poner
-        // un punto de ruptura y hacer debug
-        // asi podemos ver los objetos creados
+        Pizzas_2023 creadaConBuilder = new BuilderPizzas().build();
+        Pizzas_2023 champiñona=new Pizzas_2023(0,2,true,false,true,1,false,true);
+        System.out.println(champiñona);
+        Pizzas_2023 olivica=new Pizzas_2023(1,3,false,false,false,1,true,true);
+        System.out.println(olivica);
         System.out.println(creadaConBuilder.toString());
-        System.out.println(sintaxisEncadenada.toString());
-        //El toString lo puse a mi gusto para que en vez de salir los numeros asociados a size o tipo de masa salieran los literales
-        //que tenemos declarados al inicio de la clase pizzas
 
     }
 }
