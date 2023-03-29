@@ -1,4 +1,10 @@
 public class Main {
+    /**
+     *Proyecto buirler para trabajar con el patron builder
+     *
+     * @author Alejandra Dominguez
+     * @version 0.1
+     */
     public static void main(String[] args) {
         // utilizamos el builder y en concreto el metodo build
         // para tener nuestra pizza
